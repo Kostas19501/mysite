@@ -1,0 +1,20 @@
+<!-- blog/templates/blog/post/add_post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить пост</title>
+</head>
+<body>
+    <h1>Добавить новый пост</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Отображаем форму -->
+        <button type="submit">Добавить пост</button>
+    </form>
+
+    <p><a href="{% url 'post_list' %}">Вернуться к списку постов</a></p>
+</body>
+</html>

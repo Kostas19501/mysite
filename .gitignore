@@ -1,0 +1,7 @@
+.idea
+venv
+__pycache__/
+db.sqlite3
+.env
+mysite_data.json
+schema.yml
